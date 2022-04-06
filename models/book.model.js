@@ -9,11 +9,6 @@ inventory_count: the number of copies of this book available in our library inve
 const mongoose = require('mongoose');
 const bookSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,  
-    id:{
-        type:Number,
-        /*add auto-increment*/
-        required: true
-    },
     title: { 
         type: String, 
         required: true,
